@@ -1,0 +1,39 @@
+<Label>:
+	font_size: 20
+<Ball>:
+	size: 50,50
+	canvas:
+		Ellipse:
+			pos: self.pos
+			size: 50,50
+<GameFloatLayout>:
+	orientation: 'horizontal'
+	BallGame:
+		id: ballGme
+		Ball:
+			size_hint: 50,50
+			size: 50,50
+			id: cuswid
+			pos: 0,root.height/2-(25)
+		Label:
+			id: lblx
+			text: ''
+			pos: 0,0
+		Label:
+			id: lblequal
+			text: '='
+			pos: 50,0
+			font_size:60
+		Label:
+			id: lbly
+			text: ''
+			pos: 100,0
+		Label:
+			id: lblscore
+			text: 'distance to solution : ' + str(root.height)
+			pos: 80,root.height-80
+		Label:
+			id: hint
+			text: ''
+			font_size: 20
+			pos: 80,root.height-110
